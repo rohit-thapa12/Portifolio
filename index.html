@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta 
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta
         name="description"
         content="Personal portfolio of Rohit Thapa, a computer science student and web developer."
-    />
-    <meta name="author" content="Rohit Thapa" />
+    >
+
+    <meta name="author" content="Rohit Thapa">
+
     <title>Rohit Thapa | Personal Portfolio</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header> <h1> Rohit Thapa Magar</h1>
+
+<body id="top">
+
+    <!-- Header -->
+    <header>
+        <h1>Rohit Thapa Magar</h1>
+
         <p>Computer Science Student and Web Developer</p>
+
+        <!-- Navigation -->
         <nav aria-label="Primary">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -22,110 +37,199 @@
             </ul>
         </nav>
     </header>
+
+
+    <!-- Main Content -->
     <main>
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About Me</h2>
 
-      <!-- ADD YOUR IMAGE HERE -->
-      <figure>
-        <img
-          src="images/Rohit.png.jpeg" 
-          alt="Portrait photo of Rohit Thapa"
-          width="200"
-          height="200"
-        />
-        <figcaption>Rohit Thapa, Computer Science student</figcaption>
-      </figure>
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
 
-      <p>
-        Hello! I am Rohit Thapa, an undergraduate student studying Computer
-        Science at Model Institute of Technology. I enjoy building web
-        applications...
-      </p>
-    </section>
-      <p>
-        My interests include front-end development, JavaScript frameworks such
-        as React and Next.js, and writing accessible, standards-compliant
-        code. Outside of coursework, I learn by building small projects and
-        publishing them on GitHub.
-      </p>
-    <section id="skills" aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Technical Skills</h2>
-      <dl>
-        <dt>HTML</dt>
-        <dd>
-          Semantic markup, accessible forms, and W3C-valid document structure.
-        </dd>
+            <h2 id="about-heading">About Me</h2>
 
-        <dt>CSS</dt>
-        <dd>
-          Styling, responsive design using Flexbox and Grid, and UI layout optimization.
-        </dd>
+            <figure>
+                <img
+                    src="images/rohit.png"
+                    alt="Portrait photo of Rohit Thapa"
+                    width="200"
+                    height="200"
+                >
 
-        <dt>Java</dt>
-        <dd>
-          Object-oriented programming, data structures, algorithms, and core application development.
-        </dd>
+                <figcaption>
+                    Rohit Thapa, Computer Science Student
+                </figcaption>
+            </figure>
 
-        <dt>GitHub</dt>
-        <dd>
-          Version control, code collaboration, repository management, and project deployment.
-        </dd>
-      </dl>
-    </section>
-    <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
+            <p>
+                Hello! I am Rohit Thapa, an undergraduate student studying
+                Computer Science at Model Institute of Technology. I enjoy
+                building web applications and learning new technologies.
+            </p>
 
-      <article aria-labelledby="project-hotel">
-        <h3 id="project-hotel">Hotel Management System</h3>
+            <p>
+                My interests include front-end development, JavaScript
+                frameworks such as React and Next.js, and writing accessible,
+                standards-compliant code. Outside of coursework, I learn by
+                building small projects and publishing them on GitHub.
+            </p>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" aria-labelledby="skills-heading">
+
+            <h2 id="skills-heading">Technical Skills</h2>
+
+            <dl>
+
+                <dt>HTML</dt>
+                <dd>
+                    Semantic markup, accessible forms, and W3C-valid
+                    document structure.
+                </dd>
+
+                <dt>CSS</dt>
+                <dd>
+                    Styling, responsive design using Flexbox and Grid,
+                    and UI layout optimization.
+                </dd>
+
+                <dt>Java</dt>
+                <dd>
+                    Object-oriented programming, data structures,
+                    algorithms, and core application development.
+                </dd>
+
+                <dt>GitHub</dt>
+                <dd>
+                    Version control, code collaboration, repository
+                    management, and project deployment.
+                </dd>
+
+            </dl>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" aria-labelledby="projects-heading">
+
+            <h2 id="projects-heading">Projects</h2>
+
+
+            <!-- Hotel Management System -->
+            <article aria-labelledby="project-hotel">
+
+                <h3 id="project-hotel">
+                    Hotel Management System
+                </h3>
+
+                <p>
+                    A full-stack web application designed to streamline
+                    hotel operations, including room booking, guest
+                    check-ins/check-outs, billing, and real-time room
+                    availability management.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    React, Node.js, Express, MongoDB, Tailwind CSS
+                </p>
+
+                <p>
+                    <a
+                        href="https://github.com/rohit-thapa12/Hotel-Management-System"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View the Hotel Management System repository on GitHub
+                    </a>
+                </p>
+
+            </article>
+
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+
+            <h2 id="contact-heading">Contact Me</h2>
+
+            <p>
+                If you would like to get in touch with me, please use
+                the form below.
+            </p>
+
+            <form action="#" method="post">
+
+                <!-- Name -->
+                <p>
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required
+                    >
+                </p>
+
+
+                <!-- Email -->
+                <p>
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+                </p>
+
+
+                <!-- Message -->
+                <p>
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message"
+                        required
+                    ></textarea>
+                </p>
+
+
+                <!-- Submit Button -->
+                <p>
+                    <button type="submit">
+                        Send Message
+                    </button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
         <p>
-          A full-stack web application designed to streamline hotel operations,
-          including room booking, guest check-ins/check-outs, billing, and real-time room availability management.
+            &copy; 2026 Rohit Thapa. All rights reserved.
         </p>
-        <p>
-          <strong>Technologies:</strong> React, Node.js, Express, MongoDB, Tailwind CSS
-        </p>
-        <p>
-          <a href="https://github.com/rohit-thapa12/Hotel-Management-System"
-            >View the Hotel Management System repository on GitHub</a
-          >
-        </p>
-      </article>
 
-      <article aria-labelledby="project-movies">
-        <h3 id="project-movies">Movies App</h3>
         <p>
-          A single-page web application built with React for browsing movies.
-          The project was used to practise React components, state management,
-          and fetching data from an external API.
+            <a href="#top">Back to top</a>
         </p>
-        <p><strong>Technologies:</strong> React, JavaScript</p>
-        <p>
-          <a href="https://github.com/rohit-thapa12/Movies-App"
-            >View the Movies App repository on GitHub</a
-          >
-        </p>
-      </article>
 
-      <article aria-labelledby="project-files">
-        <h3 id="project-files">File Sharing Application</h3>
-        <p>
-          A file sharing web application built with Next.js and TypeScript
-          using the App Router. Users can upload files and share them with
-          others through a link.
-        </p>
-        <p><strong>Technologies:</strong> Next.js, TypeScript</p>
-        <p>
-          <a href="https://github.com/Rajankfl/next-file-sharing"
-            >View the File Sharing App repository on GitHub</a
-          >
-        </p>
-      </article>
-    </section>
+    </footer>
 
-  <footer>
-    <p>&copy; 2026 Rohit Thapa. All rights reserved.</p>
-    <p><a href="#top">Back to top</a></p>
-  </footer>
 </body>
 </html>
